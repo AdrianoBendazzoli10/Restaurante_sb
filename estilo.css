@@ -1,0 +1,153 @@
+/* style.css */
+
+/* --------------------
+   Body e cores gerais
+-------------------- */
+html {
+    scroll-padding-top: 70px; /* ajusta para navbar fixa */
+    scroll-behavior: smooth;  /* rolagem suave */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: black;
+    margin: 0; /* remove margem padrão */
+    padding-top: 70px; /* espaço inicial para navbar fixa */
+}
+
+/* --------------------
+   Navbar
+-------------------- */
+.navbar {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 1000;
+   background-color: #000; /* garante contraste */
+   
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.nav-link {
+    margin-left: 1rem;
+    font-size: 1rem;
+}
+
+
+
+/* --------------------
+   Home / Banner
+-------------------- */
+#home {
+    background-color: black;
+    background-size: cover;
+    padding: 6rem 1rem;
+    color: #fff;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+    min-height: 50vh;
+}
+
+#home .btn {
+    margin-top: 1rem;
+}
+
+.banner{
+    background-color: #000 !important;
+}
+
+/* --------------------
+   Cardápio
+-------------------- */
+#cardapio h2 {
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+#cardapio .card {
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+#cardapio .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+#cardapio .card-title {
+    color: #ff6600;
+    font-weight: bold;
+}
+
+#cardapio .card-text {
+    font-size: 0.95rem;
+}
+
+/* --------------------
+   Sobre Nós
+-------------------- */
+#sobre h2 {
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+#sobre p {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.05rem;
+}
+
+/* --------------------
+   Contato
+-------------------- */
+#contato h2 {
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+#contato p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+#contato a {
+    color: #0f3670;
+    text-decoration: none;
+}
+
+#contato a:hover {
+    text-decoration: underline;
+}
+
+/* --------------------
+   Footer
+-------------------- */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}
+
+.card {
+  height: 100%; /* ou o tamanho que você quiser */
+}
+
+/* --------------------
+   Responsividade extra
+-------------------- */
+@media (max-width: 768px) {
+    #home {
+        padding: 4rem 1rem;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+}

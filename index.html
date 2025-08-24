@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurante Sabores do Chef</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar" >
+    <div class="container">
+      <a class="navbar-brand" href="#">Sabores do Chef</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cardapio">Cardápio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre Nós</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home / Banner -->
+  <section id="home" class="text-center text-white bg-primary py-5 banner">
+    <div class="container">
+      <h1 class="display-4">Bem-vindo ao Sabores do Chef</h1>
+      <p class="lead">O melhor sabor da culinária direto para você!</p>
+      <a href="#cardapio" class="btn btn-light btn-lg">Veja nosso Cardápio</a>
+    </div>
+  </section>
+
+  <!-- Cardápio -->
+  <section id="cardapio" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Nosso Cardápio</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://blog.eduk.com.br/wp-content/uploads/2016/08/hamburguer_shutterstock.jpg" class="card-img-top" alt="Prato 1">
+            <div class="card-body">
+              <h5 class="card-title">Hambúrguer</h5>
+              <p class="card-text"> Um suculento hambúrguer de carne 100% bovina, grelhado no ponto perfeito, envolto por pão artesanal macio e levemente tostado. Coberto com queijo derretido, fatias frescas de tomate, alface crocante, cebola caramelizada e tiras crocantes de bacon. Finalizado com o molho secreto da casa, cada mordida é uma explosão de sabor que combina suculência, textura e aquele gostinho irresistível de bacon defumado..</p>
+              <p class="fw-bold">R$ 30,00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://th.bing.com/th/id/R.c97d765e3a9956c7849a0c700f60f305?rik=jb3v0jG32oYRkw&pid=ImgRaw&r=0" class="card-img-top" alt="Prato 2">
+            <div class="card-body">
+              <h5 class="card-title">Cachorro quente</h5>
+              <p class="card-text">Um pão macio e levemente tostado, preparado para segurar todos os ingredientes. No recheio, uma suculenta salsicha grelhada até o ponto perfeito, coberta com molho especial da casa, milho, cebola picadinha e tiras crocantes de bacon. Finalizamos com batata palha e um toque de  ketchup, garantindo uma combinação perfeita de sabores e texturas. Cada mordida é uma experiência deliciosa que une suculência e aquele sabor irresistível que faz você querer mais.</p>
+              <p class="fw-bold">R$ 12,00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.OIPMz1UwWtswo-IUQFTZ8QHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top" alt="Prato 3">
+            <div class="card-body">
+              <h5 class="card-title">Fatia de Pizza</h5>
+              <p class="card-text">Massa artesanal leve e crocante, assada até o ponto perfeito, formando a base ideal para os sabores. Coberta com molho de tomate fresco, generosa camada de queijo derretido, e fatias suculentas de calabresa defumada que liberam todo seu sabor a cada mordida. Finalizada com cebola fatiada, um toque de orégano e um fio de azeite extra virgem, cada pedaço é uma explosão de sabor que combina textura, aroma e aquele gostinho irresistível que faz você querer repetir.</p>
+              <p class="fw-bold">R$ 8,00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre Nós -->
+  <section id="sobre" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Sobre Nós</h2>
+      <p class="text-center">O Restaurante Sabores do Chef nasceu do amor pela culinária de qualidade. Nosso objetivo é oferecer pratos saborosos, frescos e preparados com carinho para cada cliente. Venha nos visitar ou faça seu pedido!</p>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contato</h2>
+      <div class="text-center">
+        <p><i class="fa fa-phone"></i> <a href="https://wa.me/5511999999999" target="_blank">WhatsApp</a></p>
+        <p><i class="fa fa-map-marker-alt"></i> Rua Exemplo, 123 - Cidade, Estado</p>
+        <p><i class="fa fa-envelope"></i> contato@restaurantesabores.com</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    &copy; 2025 Restaurante Sabores do Chef. Todos os direitos reservados.
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
