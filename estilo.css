@@ -1,64 +1,87 @@
-/* style.css */
-
 /* --------------------
-   Body e cores gerais
+   Reset & Body
 -------------------- */
 html {
-    scroll-padding-top: 70px; /* ajusta para navbar fixa */
-    scroll-behavior: smooth;  /* rolagem suave */
+    scroll-padding-top: 70px;
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    background-color: black;
-    margin: 0; /* remove margem padrão */
-    padding-top: 70px; /* espaço inicial para navbar fixa */
+    background-color: #fdf6f0; /* cor de fundo clara e aconchegante */
+    margin: 0;
+    padding-top: 70px;
+    color: #333;
 }
 
 /* --------------------
    Navbar
 -------------------- */
 .navbar {
-   position: fixed;
-   top: 0;
-   left: 0;
-   width: 100%;
-   z-index: 1000;
-   background-color: #000; /* garante contraste */
-   
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #b22222; /* vermelho restaurante */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 .navbar-brand {
     font-weight: bold;
     font-size: 1.8rem;
+    color: #fff !important;
 }
 
 .nav-link {
     margin-left: 1rem;
     font-size: 1rem;
+    color: #fff !important;
+    transition: color 0.3s;
 }
 
-
+.nav-link:hover {
+    color: #ffd700 !important; /* dourado no hover */
+}
 
 /* --------------------
-   Home / Banner
+   Banner / Home
 -------------------- */
 #home {
-    background-color: black;
+    background-image: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1470&q=80');
     background-size: cover;
-    padding: 6rem 1rem;
+    background-position: center;
+    padding: 8rem 1rem;
     color: #fff;
-    text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
-    min-height: 50vh;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+#home p {
+    font-size: 1.5rem;
 }
 
 #home .btn {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
+    font-weight: bold;
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    transition: all 0.3s;
 }
 
-.banner{
-    background-color: #000 !important;
+#home .btn:hover {
+    background-color: #ffd700;
+    color: #b22222;
+    transform: translateY(-3px);
 }
 
 /* --------------------
@@ -66,59 +89,91 @@ body {
 -------------------- */
 #cardapio h2 {
     font-weight: bold;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+    color: #b22222;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
 }
 
 #cardapio .card {
-    border-radius: 15px;
-    transition: transform 0.3s ease;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 100%;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 #cardapio .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
 #cardapio .card-title {
-    color: #ff6600;
+    color: #b22222;
     font-weight: bold;
+    font-size: 1.25rem;
 }
 
 #cardapio .card-text {
     font-size: 0.95rem;
+    color: #555;
+}
+
+#cardapio .fw-bold {
+    color: #000;
+    font-size: 1.1rem;
 }
 
 /* --------------------
    Sobre Nós
 -------------------- */
+#sobre {
+    background-color: #fff4f0;
+    padding: 5rem 1rem;
+}
+
 #sobre h2 {
     font-weight: bold;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
+    color: #b22222;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 #sobre p {
-    max-width: 800px;
+    max-width: 700px;
     margin: 0 auto;
     text-align: center;
-    font-size: 1.05rem;
+    font-size: 1.1rem;
+    color: #444;
 }
 
 /* --------------------
    Contato
 -------------------- */
+#contato {
+    background-color: #fdf6f0;
+    padding: 5rem 1rem;
+}
+
 #contato h2 {
     font-weight: bold;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
+    color: #b22222;
+    text-align: center;
 }
 
 #contato p {
     font-size: 1rem;
     margin: 0.5rem 0;
+    color: #555;
 }
 
 #contato a {
-    color: #0f3670;
+    color: #b22222;
     text-decoration: none;
+    font-weight: bold;
 }
 
 #contato a:hover {
@@ -129,22 +184,22 @@ body {
    Footer
 -------------------- */
 footer {
-    background-color: #222;
+    background-color: #b22222;
     color: #fff;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
     font-size: 0.9rem;
 }
 
-.card {
-  height: 100%; /* ou o tamanho que você quiser */
-}
-
 /* --------------------
-   Responsividade extra
+   Responsividade
 -------------------- */
 @media (max-width: 768px) {
-    #home {
-        padding: 4rem 1rem;
+    #home h1 {
+        font-size: 2.2rem;
+    }
+
+    #home p {
+        font-size: 1.2rem;
     }
 
     .navbar-nav {
