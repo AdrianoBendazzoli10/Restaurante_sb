@@ -12,7 +12,7 @@ body {
     background-color: #fdf6f0; /* cor de fundo clara e aconchegante */
     margin: 0;
     padding-top: 70px;
-    color: #333;
+    color: #000000ff;
 }
 
 /* --------------------
@@ -24,8 +24,8 @@ body {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: #b22222; /* vermelho restaurante */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    background-color: blue; /* vermelho restaurante */
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
 }
 
 .navbar-brand {
